@@ -7,7 +7,16 @@ box-sizing: border-box;
 .main{
     width: 100%;
 }
+.wrapper{
+display:grid;
+width: 100vw;
+height: 100vh;
 
+background-image: url("/img/bakgrundsbild1.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
 .nav{
 width: 100%;
 background-color: black;
@@ -28,6 +37,7 @@ a{
     text-decoration: none;
     color: white;
     font-size: 17px;
+    transition: 0.5s all ease;
 }
 
 ul{
@@ -39,4 +49,13 @@ ul li{
 float: left;
 padding: 0px 10px;
 list-style: none;
+}
+
+ul li a:hover{
+color:paleturquoise;
+}
+
+.header{
+
+
 }
