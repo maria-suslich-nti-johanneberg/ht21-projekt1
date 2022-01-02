@@ -1,80 +1,74 @@
-body{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
-}
-
-.main{
-    width: 100%;
-}
-.wrapper{
-display:grid;
-
-
-}
-
-.header {
-    z-index:1;
-}
-#bakgrundsbild{
-    position:absolute;
-    z-index:0;
-height:100vh;
-filter:blur(8px);
-background-image: url("/img/bakgrund1.jpg");
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+#wrapper {
+display: grid;
+width: 100vw;
+min-height: 100vh;
+margin: auto;
+grid-template-areas: 
+"nv nv nv nv"
+"hd hd hd hd"
+"hd hd hd hd"
+"hd hd hd hd"
+"mn mn mn mn"
+"mn mn mn mn"
+"mn mn mn mn"
+"fl fl fl fl"
+"ad ad ad ad"
+"ft ft ft ft";
 }
 
 .nav{
 width: 100%;
-height: 80px;
-line-height: 80px;
-display:flex;
-justify-content:space-between;
+height: 15vh;
+margin: auto;
+display: flex;
+align-items: center;
 }
 
-.logo a{
-font-size:39px;
-color:rgb(0, 21, 49);
-font-weight: blod;
-margin-left: 100px;
+.logo {
+    width: 160px;
+    cursor: pointer;
+
 }
 
-a{
-    text-decoration: none;
-    font-weight: blod;
-    color: rgb(4, 0, 255);
-    font-size: 18px;
-    transition: 0.3s all ease;
+nav{
+
+grid-area: nv;
+flex: 1;
+padding-left: 60px;
+
 }
 
-ul{
-margin: 0px;
-margin-right: 100px;
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
 }
 
-ul li{
-float: left;
-padding: 0px 15px;
-list-style: none;
+header {
+    grid-area: hd;
+    background-color:beige;
 }
 
-ul li a:hover{
-color:rgb(255, 131, 193);
+main {
+    grid-area:mn;
+background-color: burlywood;
 }
 
-.content{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(238, 0, 159);
-    text-align: center;
+#filosofi {
+    grid-area: fl;
+    background-color: rgb(49, 49, 83);
+
 }
 
-.content h1{
-font-size: 70px;
+#adress {
+    grid-area: ad;
+    background-color: rgb(255, 243, 238);
+
+}
+
+footer {
+    grid-area: ft;
+    background-color: dodgerblue;
 
 }
