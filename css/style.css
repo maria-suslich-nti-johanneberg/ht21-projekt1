@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@100;500&family=Roboto+Slab:wght@300&family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:wght@200&family=Roboto+Mono:wght@100;500&family=Roboto+Slab:wght@300&family=Zen+Antique&display=swap');
 
 #wrapper{
 display:grid;
 width: 100%;
-height: 200vh;
 margin: 0;
 grid-template-areas: 
 "nv nv"
@@ -14,51 +13,255 @@ grid-template-areas:
 "d3 d3"
 "ft ft";
 
-
 }
 
 nav {
     grid-area: nv;
+    display: flex;
+    justify-content:space-between ;
     height: 5vh;
-    background-color: #c6c5f8;
+    background-color: transparent;
     list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
-}
+    align-items: center;
+    padding: 5px 5%;
+    }
+
+    #loga {
+    cursor: pointer;
+    display: inline-block; 
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Roboto Mono', bold, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color:  #990099;
+    }
+    #loga a{
+        display: inline-block; 
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        padding: 10px;
+        font-family: 'Roboto Mono', bold, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color:  #990099;  
+        transition: all 0.3s ease 0s; 
+    }
+    #loga a:hover{
+    color: #ff86ff
+    }
+  .nav_link li a {
+    display: inline-block; 
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Roboto Mono', bold, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color:  #990099;
+    
+  }
 
   .nav_link li {
     display: inline-block;
-    font-size: 10px;
-    padding: 10px;
-    text-decoration: none;
+    padding: 0px 20px;
+
   }
 
-header{
-    grid-area: hd;
-    height: 100vh;
-    background-color: #aaa9dd;
-    
+  .nav_link li a{
+    transition: all 0.3s ease 0s;
 
+  }
+  
+    .nav_link li a:hover{
+    color: #ff86ff;}
+  
+  header{
+    grid-area: hd;
+    height: 50vh;
+    background-image: url(/img/bakgrund1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+margin-bottom: 150px;
+font-family: 'Arial Narrow Bold', sans-serif;
+color: white;
+
+}
+
+.line {
+width: 150px;
+height: 4px;
+background-color: whitesmoke;
+margin: 10px auto;
+margin-bottom: 30px;
+border-radius: 5px;
+}
+.header-content h2{
+    display:flex;
+    font-size: 4vmin;
+    justify-content: center;
+}
+
+.header-content h1{ 
+    display:flex;
+    justify-content: center;
+     font-size: 7vmin;
+    margin-bottom: 30px;
+}
+
+.header-content h1:hover{
+    color: #eb5feb;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 #del1{
     grid-area: d1;
-    background-color: #c4c3ff;
+    display: grid;
+    height: 60vh; 
+    font-family:'Nunito Sans', sans-serif;
+    grid-template-areas: 
+    "r1 r2";   
+    justify-content:center;
+    color: white;
+    text-align: center;
+    grid-template-rows: 95%;
+    margin-top: 20px;
+}
+
+.ruta{
+    grid-area: r1;
+    width: 30em;
+    background-color: #ce65c5;
+    border-radius: 20%;
+    margin-inline-start: 3em;
+    margin-inline-end: 5vw;
+} 
+
+#ruta_text{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 6.5em;
+}
+
+.ruta2{
+    grid-area: r2;
+    width: 30em;
+    background-color: #00c3ff;
+    margin-inline-start: 3em;
+    margin-inline-end: 5vw;
+    border-radius: 20%;
+    
+}
+
+#ruta_text2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 6.5em;
+}
+
+button{
+    padding: 20px 35px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+button:hover {
+    background-color: #ffc400;
 }
 
 #del2{
     grid-area: d2;
-    background-color: #3c3a85;
+    height: 70vh;
+    background-image: url(/img/filosofi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+
 }
+
+#ruta_text_f{
+    
+    font-size: 3vmin;
+    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 
+    'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+
+    background-color: rgba(176, 154, 255, 0.747);
+    padding: 20px;
+    border-radius: 25px;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-start: 346px;
+    margin-inline-end: 346px;
+  
+    
+
+}
+
+.line2 {
+    width: 250px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.filosofi h1{
+    color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: center;
+    font-size: 7vmin;
+    margin-bottom: 30px;  
+    font-family: 'Arial Narrow Bold', sans-serif;
+    display: block;
+    margin-block-start:5%;
+}
+
+.filosofi h1:hover{
+    color: rgb(176, 154, 255);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
 
 #del3{
     grid-area: d3;
     background-color: #c4c3ff;
+    height: 50vh;
 }
 
 footer{
     grid-area: ft;
     background-color: #21204b;
-
+    height: 30vh;
 }
+   
+
+
+
