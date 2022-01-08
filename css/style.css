@@ -97,6 +97,9 @@ header{
 margin-bottom: 250px;
 font-family: 'Arial Narrow Bold', sans-serif;
 color: white;
+background-color: rgba(255, 0, 242, 0.384);
+    padding: 20px;
+    border-radius: 50px;
 
 }
 
@@ -395,7 +398,7 @@ button:hover {
 
 #button2:hover {
     background-color: #e4a0ff;
-    
+    transition: all 0.4s ease-in-out 0s;
 }
 
 footer{
@@ -404,11 +407,12 @@ footer{
     height: 30vh;
     color: white;
     display: grid;
-    justify-content: left;
+    justify-content: left; 
+    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .kontakt{
-    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
     font-weight: 400;
     font-size: 3em;
     margin-left: 3em;
@@ -416,8 +420,7 @@ footer{
 }
 
 #contact{
-    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 25px;
     margin-left: 4em;
     display: block;
@@ -432,7 +435,7 @@ body.omoss{
     background-color: rgb(255, 255, 255);
     grid-template-areas: 
     "nv nv"
-    "s1 h1"
+    "s1 s1"
     "mn mn"
     "s2 s2"
     "ft ft";
@@ -448,7 +451,8 @@ background-position:center;
 background-size: cover;
 display: flex;
 align-items: flex-end;
-justify-content: center;
+justify-content: center; 
+text-align: center;
 
 }
 
@@ -462,46 +466,326 @@ justify-content: center;
 
   
 }
-.section_content{
-    display: block;
+.section{
+    margin-bottom: 250px;
     font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
-    margin-bottom: 250px;
-    text-align: center;
+    color: white;
+    background-color: rgba(167, 0, 0, 0.384);
+    padding: 20px;
+    border-radius: 50px;
 
 }
 
-.section-content h2{
-    display:flex;
+.section h2{
     font-size: 4vmin;
-    justify-content: center;
+   
 }
 
-.section-content h1{ 
-    display:flex;
-     font-size: 7vmin;
-    margin-bottom: 30px;
+.section h1{
+font-size: 7vmin;
+display: block;
+margin-bottom: 10px;
 }
 
-.section-content h3{
+.section h1:hover{
+    color: rgb(238, 234, 1);
+    transition: all 0.4s ease-in-out 0s;
+}
 
+.section h3{
+font-size: 3vmin;
+display: block;
+margin-top: 30px;
 }
 
 main{
     grid-area: mn;
     height: 60vh;
-    text-align: center;
-
+    display: grid;
+    grid-template-areas: "nt b";
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
 }
 
+.bild{
+grid-area: b;
+border-radius: 20px;
+margin-left: -55em;
+}
 
-
+#nordic_taste{
+    grid-area: nt;
+    background-color: rgba(0, 8, 83, 0.986);
+    text-align: center;
+    width: 10em;
+    padding: 116px; 
+    font-size: 50px;
+    display: block;
+    color: white;
+    margin-left: 1.5em;
+    border-radius: 20px;
+    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+ 
+}
 
 
 #section2{
-    grid-area: s1;
+    grid-area: s2;
     background-color: slateblue;
+    height: 50vh;
+    display: grid;
+    grid-template-areas: "o a";
 }
+
+
+.nav.omoss {
+    grid-area: nv;
+    display: flex;
+    justify-content:space-between ;
+    height: 5vh;
+    background-color: transparent;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    padding: 5px 5%;
+    }
+
+    #loga.omoss {
+    cursor: pointer;
+    display: inline-block; 
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Roboto Mono', bold, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color:  #990099;
+    }
+    #loga.omoss a{
+        display: inline-block; 
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        padding: 10px;
+        font-family: 'Roboto Mono', bold, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color:  #990099;  
+        transition: all 0.3s ease 0s; 
+    }
+    #loga.omoss a:hover{
+    color: #ff86ff
+    }
+  .nav_link.omoss li a {
+    display: inline-block; 
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Roboto Mono', bold, sans-serif;
+    font-weight: 500;
+    color:  #990099;
+    
+  }
+
+  .nav_link.omoss li {
+    display: inline-block;
+    padding: 0px 10px;
+
+  }
+
+  .nav_link.omoss li a{
+    transition: all 0.3s ease 0s;
+
+  }
+  
+.nav_link.omoss li a:hover{
+    color: #ff86ff;}
+
+
+footer{
+        grid-area: ft;
+        background-color: #21204b;
+        height: 30vh;
+        color: white;
+        display: grid;
+        justify-content: left;
+    }
+    
+.kontakt{
+        font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        font-size: 3em;
+        margin-left: 3em;
+        
+    }
+    
+#contact{
+        font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        margin-left: 4em;
+        display: block;
+        margin-block-start: -64px;
+        width: 20vw;
+       }
+
+body.omoss{
+    display:grid;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    grid-template-areas: 
+    "nv nv"
+    "s1 s1"
+    "mn mn"
+    "bb bb"
+    "s2 s2"
+    "ft ft";
+    
+}
+
+#section1{
+grid-area: s1;
+height: 80vh;
+display: grid;
+background-image: url(/img/bakgrund3.jpg);
+background-position:center;
+background-size: cover;
+display: flex;
+align-items: flex-end;
+justify-content: center; 
+text-align: center;
+
+}
+
+.linje{
+    width: 450px;
+    height: 8px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+  
+}
+.section{
+    margin-bottom: 250px;
+    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color: white;
+    background-color: rgba(167, 0, 0, 0.384);
+    padding: 20px;
+    border-radius: 50px;
+
+}
+
+.section h2{
+    font-size: 4vmin;
+   
+}
+
+.section h1{
+font-size: 7vmin;
+display: block;
+margin-bottom: 10px;
+}
+
+.section h1:hover{
+    color: rgb(238, 234, 1);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.section h3{
+font-size: 3vmin;
+display: block;
+margin-top: 30px;
+}
+
+main{
+    grid-area: mn;
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "nt b";
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.bild{
+grid-area: b;
+border-radius: 20px;
+margin-left: -28em;
+}
+
+#nordic_taste{
+    grid-area: nt;
+    background-color: rgba(0, 8, 83, 0.986);
+    text-align: center;
+    width: 10em;
+    padding: 73px;
+    font-size: 50px;
+    display: block;
+    color: white;
+    margin-left: 1.5em;
+    border-radius: 20px;
+    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+ 
+}
+
+.bakgrundsbild{
+    grid-area: bb;
+    height: 50vh;
+    background-image: url(/img/bakgrund4.jpg);
+    background-position:center;
+background-size: cover;
+}
+
+#se2{
+    grid-area: s2;
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "o a";
+    justify-content: center;
+    align-items: start;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    color: rgb(5, 0, 0);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.5vmin;
+    grid-gap: 30px;
+
+
+}
+
+.open{
+grid-area: o;
+width: 450px;
+justify-content: center;
+padding:10px;
+
+
+
+}
+
+.section02{
+    grid-area: a;
+    width: 450px;
+    justify-content: center;
+    padding:10px;
+
+}
+
 
 
 .nav.omoss {
@@ -573,10 +857,6 @@ main{
     color: #ff86ff;}
 
 
-
-
-    
-
 footer.omoss{
         grid-area: ft;
         background-color: #21204b;
@@ -595,7 +875,8 @@ footer.omoss{
     }
     
 #contact.omoss{
-        font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;   
+    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 300;
         font-size: 25px;
         margin-left: 4em;
@@ -603,3 +884,4 @@ footer.omoss{
         margin-block-start: -64px;
         width: 20vw;
        }
+     
