@@ -528,7 +528,6 @@ footer{
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-evenly;
-    border-radius: 20px;
 }
 
 .frukt_text{
@@ -539,6 +538,7 @@ footer{
     align-content: center;
     justify-content: space-around;
     margin-bottom: 60px;
+    
 }
 
 body.omoss{
