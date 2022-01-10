@@ -427,219 +427,123 @@ footer{
     margin-block-start: -64px;
     width: 20vw;
    }
-   
-body.omoss{
+
+
+   body.menu{
     display:grid;
-    width: 100%;
-    margin: 0;
+    width: 100vw;
+    margin: 0px;
     background-color: rgb(255, 255, 255);
     grid-template-areas: 
     "nv nv"
-    "s1 s1"
-    "mn mn"
-    "s2 s2"
+    "ml ml"
+    "mf mf"
     "ft ft";
     
 }
 
-#section1{
-grid-area: s1;
-height: 80vh;
-display: grid;
-background-image: url(/img/bakrgund3.jpg);
-background-position:center;
-background-size: cover;
-display: flex;
-align-items: flex-end;
-justify-content: center; 
-text-align: center;
+#sec1{
+    grid-area: se1;
+    height: 80vh;
+    display: grid;
+    background-image: url(/img/bakgrund5.jpg);
+    background-position: center;
+    background-size: cover;
 
-}
-
-.linje{
-    width: 450px;
-    height: 8px;
-    background-color: rgb(255, 255, 255);
-    margin: 10px auto;
-    margin-bottom: 30px;
-    border-radius: 5px;
-
-  
-}
-.section{
-    margin-bottom: 250px;
     font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 200;
     color: white;
-    background-color: rgba(167, 0, 0, 0.384);
-    padding: 20px;
-    border-radius: 50px;
+    text-align: center;
 
+    justify-content: center;
+    align-items: start;
+    align-content: center;
+    justify-items: center;
+    
 }
 
-.section h2{
+#sec1 h3{
+    font-size: 3vmin;
+}
+
+#sec1 h2{
     font-size: 4vmin;
+}
+
+#sec1 h1{
+    font-size: 7vmin;
+    margin-bottom: 3px;
    
 }
-
-.section h1{
-font-size: 7vmin;
-display: block;
-margin-bottom: 10px;
+.huvudrubrik{
+    background-color: rgba(37, 39, 153, 0.418);
+    padding: 30px;
+    border-radius: 50px;
 }
 
-.section h1:hover{
-    color: rgb(238, 234, 1);
-    transition: all 0.4s ease-in-out 0s;
-}
-
-.section h3{
-font-size: 3vmin;
-display: block;
-margin-top: 30px;
-}
-
-main{
-    grid-area: mn;
+.menu_list{
+    grid-area: ml;
     height: 60vh;
     display: grid;
-    grid-template-areas: "nt b";
-    justify-content: space-around;
+    grid-template-areas: "jm ch";
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
     justify-items: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-.bild{
-grid-area: b;
-border-radius: 20px;
-margin-left: -55em;
+.jam{
+    grid-area: jm;
 }
 
-#nordic_taste{
-    grid-area: nt;
-    background-color: rgba(0, 8, 83, 0.986);
-    text-align: center;
-    width: 10em;
-    padding: 116px; 
-    font-size: 50px;
-    display: block;
-    color: white;
-    margin-left: 1.5em;
-    border-radius: 20px;
-    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
- 
+.jam h1{
+    font-size: 5vmin;
 }
 
+.chocolate{
+    grid-area: ch;
+}
 
-#section2{
-    grid-area: s2;
-    background-color: slateblue;
+.chocolate h1{
+    font-size: 5vmin;
+}
+
+.menu_frukt{
+    grid-area: mf;
     height: 50vh;
     display: grid;
-    grid-template-areas: "o a";
+    grid-template-areas: 
+    "fb fb fb"
+    "ft ft ft";
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.nav.omoss {
-    grid-area: nv;
+.frukt_bilder{
+    grid-area: fb;
     display: flex;
-    justify-content:space-between ;
-    height: 5vh;
-    background-color: transparent;
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    padding: 5px 5%;
-    }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
 
-    #loga.omoss {
-    cursor: pointer;
-    display: inline-block; 
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'Roboto Mono', bold, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color:  #990099;
-    }
-    #loga.omoss a{
-        display: inline-block; 
-        text-decoration: none;
-        list-style: none;
-        font-size: 20px;
-        padding: 10px;
-        font-family: 'Roboto Mono', bold, sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        color:  #990099;  
-        transition: all 0.3s ease 0s; 
-    }
-    #loga.omoss a:hover{
-    color: #ff86ff
-    }
-  .nav_link.omoss li a {
-    display: inline-block; 
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'Roboto Mono', bold, sans-serif;
-    font-weight: 500;
-    color:  #990099;
-    
-  }
-
-  .nav_link.omoss li {
-    display: inline-block;
-    padding: 0px 10px;
-
-  }
-
-  .nav_link.omoss li a{
-    transition: all 0.3s ease 0s;
-
-  }
-  
-.nav_link.omoss li a:hover{
-    color: #ff86ff;}
-
-
-footer{
-        grid-area: ft;
-        background-color: #21204b;
-        height: 30vh;
-        color: white;
-        display: grid;
-        justify-content: left;
-    }
-    
-.kontakt{
-        font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 400;
-        font-size: 3em;
-        margin-left: 3em;
-        
-    }
-    
-#contact{
-        font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 300;
-        font-size: 25px;
-        margin-left: 4em;
-        display: block;
-        margin-block-start: -64px;
-        width: 20vw;
-       }
+.frukt_text{
+    grid-area: ft;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
 
 body.omoss{
     display:grid;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     background-color: rgb(255, 255, 255);
     grid-template-areas: 
@@ -651,6 +555,7 @@ body.omoss{
     "ft ft";
     
 }
+
 
 #section1{
 grid-area: s1;
@@ -667,8 +572,8 @@ text-align: center;
 }
 
 .linje{
-    width: 450px;
-    height: 8px;
+    width: 150px;
+    height: 4px;
     background-color: rgb(255, 255, 255);
     margin: 10px auto;
     margin-bottom: 30px;
@@ -718,6 +623,7 @@ main{
     align-items: center;
     align-content: center;
     justify-items: center;
+
 }
 
 .bild{
@@ -731,7 +637,7 @@ margin-left: -28em;
     background-color: rgba(0, 8, 83, 0.986);
     text-align: center;
     width: 10em;
-    padding: 73px;
+    padding: 60px;
     font-size: 50px;
     display: block;
     color: white;
@@ -765,7 +671,6 @@ background-size: cover;
     font-size: 2.5vmin;
     grid-gap: 30px;
 
-
 }
 
 .open{
@@ -788,100 +693,4 @@ padding:10px;
 
 
 
-.nav.omoss {
-    grid-area: nv;
-    display: flex;
-    justify-content:space-between ;
-    height: 5vh;
-    background-color: transparent;
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    padding: 5px 5%;
-    }
 
-    #loga.omoss {
-    cursor: pointer;
-    display: inline-block; 
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'Roboto Mono', bold, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color:  #990099;
-    }
-    #loga.omoss a{
-        display: inline-block; 
-        text-decoration: none;
-        list-style: none;
-        font-size: 20px;
-        padding: 10px;
-        font-family: 'Roboto Mono', bold, sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        color:  #990099;  
-        transition: all 0.3s ease 0s; 
-    }
-    #loga.omoss a:hover{
-    color: #ff86ff
-    }
-  .nav_link.omoss li a {
-    display: inline-block; 
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'Roboto Mono', bold, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color:  #990099;
-    
-  }
-
-  .nav_link.omoss li {
-    display: inline-block;
-    padding: 0px 20px;
-
-  }
-
-  .nav_link.omoss li a{
-    transition: all 0.3s ease 0s;
-
-  }
-  
-.nav_link.omoss li a:hover{
-    color: #ff86ff;}
-
-
-footer.omoss{
-        grid-area: ft;
-        background-color: #21204b;
-        height: 30vh;
-        color: white;
-        display: grid;
-        justify-content: left;
-    }
-    
-.kontakt.omoss{
-        font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 400;
-        font-size: 3em;
-        margin-left: 3em;
-        
-    }
-    
-#contact.omoss{
-    display: block;   
-    font-family: "Open Sans Condensed script=latin rev=2",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 300;
-        font-size: 25px;
-        margin-left: 4em;
-        display: block;
-        margin-block-start: -64px;
-        width: 20vw;
-       }
-     
